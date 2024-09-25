@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -27,7 +26,7 @@ import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -55,7 +54,6 @@ import com.composeuisuite.ohteepee.configuration.OhTeePeeErrorAnimationConfig
 import com.composeuisuite.ohteepee.ui.theme.OtpFieldTheme
 
 class MainActivity : ComponentActivity() {
-    @OptIn(ExperimentalFoundationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -393,7 +391,7 @@ private fun Sample2(
 
             Spacer(modifier = Modifier.width(16.dp))
 
-            Image(imageVector = Icons.Default.ArrowForward, contentDescription = "")
+            Image(imageVector = Icons.AutoMirrored.Filled.ArrowForward, contentDescription = "")
         }
 
         Spacer(modifier = Modifier.height(64.dp))
